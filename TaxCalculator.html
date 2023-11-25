@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Tax calculator </title>
+        <link rel="stylesheet" href="TaxCalculator.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="TaxCalculator.js"></script>
+
+
+    </head>
+    <body>
+        <header>
+          <h1>Tax calculator</h1>
+          <img id="img" src="taxcal.png"/> 
+        </header>
+
+        <div class="salary">
+
+            <label for="bsalary" class="label">Base Salary:</label>
+            <input type="text" id="bsalary">
+
+            <input type="checkbox" id="Months" name="Months" value="Months" onchange="hide()">
+            <label for="Months"> For 12 Months</label>
+            <br><br>
+            <div id="inputHide">
+            <label for="1" class="label1" id="jan">January</label>
+            <input type="text" id="1" name="1">
+            <br>
+            <label for="2" class="label1" id="feb">February</label>
+            <input type="text" id="2" name="2">
+            <br>
+            <label for="3"class="label1" id="mar">March</label>
+            <input type="text" id="3" name="3">
+            <br>
+            <label for="4"class="label1" id="apr">April</label>
+            <input type="text" id="4" name="4">
+            <br>
+            <label for="5"class="label1" id="may">May</label>
+            <input type="text" id="5" name="5">
+            <br>
+            <label for="6"class="label1" id="jun">June</label>
+            <input type="text" id="6" name="6">
+            <br>
+            <label for="7"class="label1" id="jul">July</label>
+            <input type="text" id="7" name="7">
+            <br>
+            <label for="8"class="label1" id="aug">August</label>
+            <input type="text" id="8" name="8">
+            <br>
+            <label for="9"class="label1" id="sep">September</label>
+            <input type="text" id="9" name="9">
+            <br>
+            <label for="10"class="label1" id="oct">October</label>
+            <input type="text" id="10" name="10">
+            <br>
+            <label for="11"class="label1" id="nov">November</label>
+            <input type="text" id="11" name="11">
+            <br>
+            <label for="12"class="label1" id="dec">December</label>
+            <input type="text" id="12" name="12">
+            <br><br>
+            <br>
+            </div>
+            <label for="Bpoints"class="label1">Bonus Points: </label>
+            <input type="text" id="Bpoints" name="Bpoints">
+            <br><br>
+           
+
+            <button type="button" id="submit">Calculate</button>
+            <p id="tax"></p>
+
+
+        </div>
+
+    </body>
+</html>
